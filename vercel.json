@@ -1,19 +1,25 @@
+
+
 {
   "version": 2,
   "builds": [
     {
-      "src": "manage.py",
+      "src": "loginproject/wsgi.py",
       "use": "@vercel/python",
-      "config": { "maxLambdaSize": "15mb" }
+      "config": {
+        "maxLambdaSize": "15mb",
+        "runtime": "python3.9"
+      }
     }
   ],
   "routes": [
     {
+      "src": "build_files.sh",
+      "dest": "/static/$1"
+    },
+    {
       "src": "/(.*)",
-      "dest": "manage.py"
+      "dest": "loginproject/wsgi.py"
     }
-  ],
-  "hooks": {
-    "postinstall": "pip install -r requirements.txt"
-  }
+  ]
 }
