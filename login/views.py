@@ -13,7 +13,7 @@ def login(request):
             if password==user.password:
             # if check_password(password, user.password):
                 # return render(request, 'result.html',{'username':username}) 
-                return HttpResponse("coorect : {username}") 
+                return HttpResponse(f"coorect : {username}") 
             else:
                 return render(request, 'login.html', {'error': 'Invalid credentials.'})
         except User.DoesNotExist:
