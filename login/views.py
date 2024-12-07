@@ -12,14 +12,15 @@ def login(request):
             user = User.objects.get(username=username)
             if password==user.password:
             # if check_password(password, user.password):
-                return render(request, 'result.html',{'username':username})  
+                # return render(request, 'result.html',{'username':username}) 
+                return HttpResponse("coorect") 
             else:
                 return render(request, 'login.html', {'error': 'Invalid credentials.'})
         except User.DoesNotExist:
             return render(request, 'login.html', {'error': 'User does not exist.'})
 
-    return HttpResponse("coorect")
-    # return render(request, 'login.html')
+    # return HttpResponse("coorect")
+    return render(request, 'login.html')
 
 
 def forgetpassword(request):
