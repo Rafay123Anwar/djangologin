@@ -39,7 +39,7 @@ def forgetpassword(request):
             return render(request, 'ForgetPassword.html', {'error': 'Phone number not found.'})
 
     # Render the form for GET requests
-    return render(request, 'ForgetPassword.html')
+    return render(request, 'Forgetpassword.html')
 
 
 
@@ -72,7 +72,7 @@ def registration(request):
         # Redirect to the login page after successful registration
         return redirect('home')  # Replace 'login' with your actual login URL name
 
-    return render(request, 'registration.html')
+    return render(request, 'Registration.html')
 
 
 # def forgetpassword(request):
