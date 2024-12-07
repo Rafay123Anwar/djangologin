@@ -1,5 +1,5 @@
 from django.contrib.auth.hashers import make_password,check_password
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect,HttpResponse
 from .models import User 
 
 def login(request):
@@ -18,7 +18,8 @@ def login(request):
         except User.DoesNotExist:
             return render(request, 'login.html', {'error': 'User does not exist.'})
 
-    return render(request, 'login.html')
+    return HttpResponse("coorect")
+    # return render(request, 'login.html')
 
 
 def forgetpassword(request):
