@@ -100,27 +100,9 @@ django-authentication-system/
 1. Users enter their registered phone number.
 2. If found, the associated username and password are displayed.
 
----
-
-## Screenshots 📸
-
-### Registration Page
-![Registration](registration.png)
-
-### Login Page
-![Login](login.png)
-
-### Forgot Password Page
-![Forgot Password](Forget password.png)
 
 ---
 
-## Known Issues ⚠️
-
-- Passwords are stored in plain text in the database. This should be replaced with hashed storage using Django's `make_password` for better security.
-- No validation on phone number format.
-
----
 
 ## Contributions 🤝
 
