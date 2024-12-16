@@ -1,5 +1,5 @@
  <h1 align="center">
-    <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&vCenter=true&width=600&height=70&duration=6000&lines=Django+Authentication+System+🛡️;Secure+User+Management+Made+Easy" />
+    <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&vCenter=true&width=600&height=70&duration=6000&lines=Django+Authentication+System+🛡️" />
   </h1>
   <h3 align="center">A simple, secure Django authentication solution.</h3>
 
